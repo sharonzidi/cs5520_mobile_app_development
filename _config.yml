@@ -1,1 +1,4 @@
-theme: jekyll-theme-minimal
+name: Zidi Xia
+markdown: kramdown
+permalink: /[sharonzidi.github.io]/:year/:month/:day/:title
+permalink: /blog/:year/:month/:day/:title

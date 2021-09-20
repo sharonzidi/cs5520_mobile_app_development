@@ -1,2 +1,4 @@
 name: Zidi Xia
 markdown: kramdown
+
+theme: jekyll-theme-cayman

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Heya
+title: Hi, I'm Zidi
 ---
 
 # My CS 5520 blog

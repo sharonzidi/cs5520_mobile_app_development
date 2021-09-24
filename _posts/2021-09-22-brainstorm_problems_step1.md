@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Final Project Step 1: Brainstorm Problems"
+title: "Final Project Step 1: Brainstorm Problems (Step 1: 50 problems)"
 date: 2021-09-22
 ---
 
-# Final Project Step 1: Brainstorm Problems
+# Step 1: Generate a giant list
 
 ## 50 problems:
 1. feel isolated and depressed during rainy seasons

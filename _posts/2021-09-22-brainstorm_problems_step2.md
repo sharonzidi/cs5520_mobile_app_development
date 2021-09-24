@@ -7,7 +7,7 @@ date: 2021-09-22
 # Step 2: Further explore at least 3 of these problems
 
 ## problem 1:
-restaurant recommendations based on location and user requirements
+### restaurant recommendations based on location and user requirements
 
 * Persona and scenario: 
 Alex is a young software development engineer who works till late night in the office and have no time to make meal. He wants to find something to eat on the way home in a shorest time and also match his flavor.

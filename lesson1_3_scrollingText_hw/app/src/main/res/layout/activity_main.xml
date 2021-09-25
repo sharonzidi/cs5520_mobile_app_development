@@ -23,36 +23,27 @@
         android:layout_below="@id/article_heading">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/article_subheading"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
                 android:padding="@dimen/padding_regular"
                 android:text="@string/article_subtitle"
-                android:textAppearance=
-                    "@android:style/TextAppearance.DeviceDefault" />
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+                android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/article"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/article"
+                android:autoLink="web"
                 android:lineSpacingExtra="@dimen/line_spacing"
                 android:padding="@dimen/padding_regular"
-                android:text="@string/article_text"
-                android:autoLink="web"/>
-
-            <TextView
-                android:id="@+id/comment"
-                android:text="@string/add_comment"
-                android:padding="@dimen/padding_regular"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@color/purple_200"
-                android:layout_margin="20dp"/>
+                android:text="@string/article_text" />
 
         </LinearLayout>
     </ScrollView>

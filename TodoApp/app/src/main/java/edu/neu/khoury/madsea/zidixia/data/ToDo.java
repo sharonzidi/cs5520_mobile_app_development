@@ -20,7 +20,7 @@ public class ToDo {
 
 
     private String description;
-    LocalDateTime deadline;
+//    LocalDateTime deadline;
 
     private boolean remindMe;
 

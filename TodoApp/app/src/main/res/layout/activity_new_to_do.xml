@@ -8,7 +8,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/new_to_do_fragment"
-        android:name="edu.northeastern.cs5520.zidixia.ToDoFragment"
+        android:name="edu.neu.khoury.madsea.zidixia.ToDoListFragment"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:defaultNavHost="true"

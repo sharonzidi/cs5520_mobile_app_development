@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
     <data>
-        <variable name="todoTask" type="edu.northeastern.cs5520.zidi.data.ToDo"/>
+        <variable name="todoTask" type="edu.neu.khoury.madsea.zidixia.data.ToDo"/>
         <variable name="todoTitle" type="String"/>
         <variable name="todoDetail" type="String"/>
     </data>
@@ -15,7 +15,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_dark">
+        android:background="@android:color/holo_green_light">
 
         <CheckBox
             android:id="@+id/checkBox2"
@@ -33,7 +33,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@android:color/background_light"
-            android:text="@{todoTask.title}"
+            android:text="@string/title"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/checkBox2"
@@ -44,7 +44,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@android:color/background_light"
-            android:text="@{todoTask.description}"
+            android:text="@string/description"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/checkBox2"

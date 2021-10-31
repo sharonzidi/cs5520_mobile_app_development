@@ -1,26 +1,43 @@
 package edu.neu.khoury.madsea.zidixia;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import edu.neu.khoury.madsea.zidixia.R;
+import edu.neu.khoury.madsea.zidixia.adapter.OnTodoClickListener;
+import edu.neu.khoury.madsea.zidixia.adapter.RecyclerViewAdapter;
 import edu.neu.khoury.madsea.zidixia.model.Priority;
+import edu.neu.khoury.madsea.zidixia.model.SharedViewModel;
 import edu.neu.khoury.madsea.zidixia.model.Task;
 import edu.neu.khoury.madsea.zidixia.model.TaskViewModel;
 
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Calendar;
+import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OnTodoClickListener {
+    private static final String TAG = "ITEM";
     private TaskViewModel taskViewModel;
+    private RecyclerView recyclerView;
+    private RecyclerViewAdapter recyclerViewAdapter;
+    private int counter;
+    BottomSheetFragment bottomSheetFragment;
+    private SharedViewModel sharedViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,18 +45,41 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        counter = 0;
+
+        bottomSheetFragment = new BottomSheetFragment();
+        ConstraintLayout constraintLayout = findViewById(R.id.bottomSheet);
+        BottomSheetBehavior<ConstraintLayout> bottomSheetBehavior = BottomSheetBehavior.from(constraintLayout);
+        bottomSheetBehavior.setPeekHeight(BottomSheetBehavior.STATE_HIDDEN);
+
+        recyclerView = findViewById(R.id.recycler_view);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
         taskViewModel = new ViewModelProvider.AndroidViewModelFactory(
                 MainActivity.this.getApplication())
                 .create(TaskViewModel.class);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(view -> {
-            Task task = new Task("Todo", Priority.HIGH, Calendar.getInstance().getTime(),
-                    Calendar.getInstance().getTime(),false);
+        sharedViewModel = new ViewModelProvider(this)
+                .get(SharedViewModel.class);
 
-            TaskViewModel.insert(task);
+        taskViewModel.getAllTasks().observe(this, tasks -> {
+            recyclerViewAdapter = new RecyclerViewAdapter(tasks, this);
+            recyclerView.setAdapter(recyclerViewAdapter);
         });
 
+        FloatingActionButton fab = findViewById(R.id.fab);
+        fab.setOnClickListener(view -> {
+//            Task task = new Task("Todo" + counter++, Priority.HIGH, Calendar.getInstance().getTime(),
+//                    Calendar.getInstance().getTime(),false);
+//
+//            TaskViewModel.insert(task);
+            showBottomSheetDialog();
+        });
+    }
+
+    private void showBottomSheetDialog() {
+        bottomSheetFragment.show(getSupportFragmentManager(), bottomSheetFragment.getTag());
     }
 
     @Override
@@ -62,5 +102,21 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onTodoClick(Task task) {
+        sharedViewModel.selectItem(task);
+        //Log.d("Click", "onTodoClick: " + task.getTask());
+        sharedViewModel.setIsEdit(true);
+        showBottomSheetDialog();
+    }
+
+
+    @Override
+    public void onTodoRadioButtonClick(Task task) {
+        Log.d("Click", "onRadioButton: " + task.getTask());
+        TaskViewModel.delete(task);
+        recyclerViewAdapter.notifyDataSetChanged();
     }
 }

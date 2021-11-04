@@ -1,4 +1,0 @@
-#Tue Sep 21 23:17:06 PDT 2021
-base.0=/Users/sharonxia/github/cs5520_mobile_app_development/lesson1_2_helloConstrain/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex

@@ -17,7 +17,7 @@ date: 2021-11-3
 
 ## Homework
 
-![Click here to browse the screenshot](/cs5520_mobile_app_development/assets/images/todo_add_due_date_cal.png){:height="50%" width="50%"}
+![adding due date](/cs5520_mobile_app_development/assets/images/todo_add_due_date_cal.png){:height="50%" width="50%"}
 
 ![Click here to browse the screenshot](/cs5520_mobile_app_development/assets/images/todo_four_task.png){:height="50%" width="50%"}
 

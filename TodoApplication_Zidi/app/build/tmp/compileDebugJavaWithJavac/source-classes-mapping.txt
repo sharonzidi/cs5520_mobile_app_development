@@ -1,0 +1,44 @@
+edu/neu/khoury/madsea/zidixia/databinding/ActivityAboutBinding.java
+ edu.neu.khoury.madsea.zidixia.databinding.ActivityAboutBinding
+edu/neu/khoury/madsea/zidixia/databinding/FragmentBottomSheetBinding.java
+ edu.neu.khoury.madsea.zidixia.databinding.FragmentBottomSheetBinding
+edu/neu/khoury/madsea/zidixia/model/SharedViewModel.java
+ edu.neu.khoury.madsea.zidixia.model.SharedViewModel
+edu/neu/khoury/madsea/zidixia/util/Utils.java
+ edu.neu.khoury.madsea.zidixia.util.Utils
+edu/neu/khoury/madsea/zidixia/adapter/RecyclerViewAdapter.java
+ edu.neu.khoury.madsea.zidixia.adapter.RecyclerViewAdapter
+ edu.neu.khoury.madsea.zidixia.adapter.RecyclerViewAdapter$ViewHolder
+edu/neu/khoury/madsea/zidixia/BottomSheetFragment.java
+ edu.neu.khoury.madsea.zidixia.BottomSheetFragment
+edu/neu/khoury/madsea/zidixia/databinding/ActivityMainBinding.java
+ edu.neu.khoury.madsea.zidixia.databinding.ActivityMainBinding
+edu/neu/khoury/madsea/zidixia/data/DoisterRepository.java
+ edu.neu.khoury.madsea.zidixia.data.DoisterRepository
+edu/neu/khoury/madsea/zidixia/model/TaskViewModel.java
+ edu.neu.khoury.madsea.zidixia.model.TaskViewModel
+edu/neu/khoury/madsea/zidixia/AboutActivity.java
+ edu.neu.khoury.madsea.zidixia.AboutActivity
+edu/neu/khoury/madsea/zidixia/MainActivity.java
+ edu.neu.khoury.madsea.zidixia.MainActivity
+edu/neu/khoury/madsea/zidixia/BuildConfig.java
+ edu.neu.khoury.madsea.zidixia.BuildConfig
+edu/neu/khoury/madsea/zidixia/model/Task.java
+ edu.neu.khoury.madsea.zidixia.model.Task
+edu/neu/khoury/madsea/zidixia/model/Priority.java
+ edu.neu.khoury.madsea.zidixia.model.Priority
+edu/neu/khoury/madsea/zidixia/util/Converters.java
+ edu.neu.khoury.madsea.zidixia.util.Converters
+edu/neu/khoury/madsea/zidixia/databinding/BottomSheetBinding.java
+ edu.neu.khoury.madsea.zidixia.databinding.BottomSheetBinding
+edu/neu/khoury/madsea/zidixia/util/TaskRoomDatabase.java
+ edu.neu.khoury.madsea.zidixia.util.TaskRoomDatabase
+ edu.neu.khoury.madsea.zidixia.util.TaskRoomDatabase$1
+edu/neu/khoury/madsea/zidixia/adapter/OnTodoClickListener.java
+ edu.neu.khoury.madsea.zidixia.adapter.OnTodoClickListener
+edu/neu/khoury/madsea/zidixia/databinding/TodoRowBinding.java
+ edu.neu.khoury.madsea.zidixia.databinding.TodoRowBinding
+edu/neu/khoury/madsea/zidixia/data/TaskDao.java
+ edu.neu.khoury.madsea.zidixia.data.TaskDao
+edu/neu/khoury/madsea/zidixia/DataBindingTriggerClass.java
+ edu.neu.khoury.madsea.zidixia.DataBindingTriggerClass

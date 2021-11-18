@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/sharonxia/github/cs5520_mobile_app_development/TodoApplication_Zidi/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_bottom_sheet.xml",
+        "source": "/Users/sharonxia/github/cs5520_mobile_app_development/TodoApplication_Zidi/app/src/main/res/layout/fragment_bottom_sheet.xml"
+    },
+    {
+        "merged": "/Users/sharonxia/github/cs5520_mobile_app_development/TodoApplication_Zidi/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/todo_row.xml",
+        "source": "/Users/sharonxia/github/cs5520_mobile_app_development/TodoApplication_Zidi/app/src/main/res/layout/todo_row.xml"
+    },
+    {
+        "merged": "/Users/sharonxia/github/cs5520_mobile_app_development/TodoApplication_Zidi/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_about.xml",
+        "source": "/Users/sharonxia/github/cs5520_mobile_app_development/TodoApplication_Zidi/app/src/main/res/layout/activity_about.xml"
+    },
+    {
+        "merged": "/Users/sharonxia/github/cs5520_mobile_app_development/TodoApplication_Zidi/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/sharonxia/github/cs5520_mobile_app_development/TodoApplication_Zidi/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/sharonxia/github/cs5520_mobile_app_development/TodoApplication_Zidi/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/bottom_sheet.xml",
+        "source": "/Users/sharonxia/github/cs5520_mobile_app_development/TodoApplication_Zidi/app/src/main/res/layout/bottom_sheet.xml"
+    }
+]

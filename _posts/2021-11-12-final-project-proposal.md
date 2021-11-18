@@ -17,7 +17,10 @@ Drivers are able to register their accounts and able to login. Driver can upload
 OnTheRoad uses cutting-edge framework Firebase to establish flexible and maintainable backend service group. Uses Toolbar, ViewPager and NavigationView combination to build user-friendly UI framework. Integrated Google Map to allow users checking instant events at their convenience. 
 
 # Problem that the application solve:
+Drivers cannot get the most updated traffic event such as an small accident on the way home. OnTheRoad support deivers to report the traffic event they experienced in real time so that other users get to know the triffic situation at that point so as to avoid drive to that road.
 
+# Target Users:
+People who need to get the real tiem traffic event while driving.
 
 # 5 features:
 **Real Time:** The database is backed by a real-time connection to the back end, and if you use the Firebase SDK, you get live updates in your app any time something changes.

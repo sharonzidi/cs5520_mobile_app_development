@@ -7,47 +7,41 @@ date: 2021-11-12
 # Final Project Proposal
 
 # App Name:
-### OnTheRoad: LBS based Android App for smart driving 
-Developed an Android App for users to exchange the nearby real-time events with Google Firebase Platform.
+### National Park: Travel & Explore & Adventure!
 
 # App Description:
-OnTheRoad is an Android Project which provides a general platform for drivers to share traffic condition events. 
-Drivers are able to register their accounts and able to login. Driver can upload events, watch events, check details and give comments on Google Map interface.
-
-OnTheRoad uses cutting-edge framework Firebase to establish flexible and maintainable backend service group. Uses Toolbar, ViewPager and NavigationView combination to build user-friendly UI framework. Integrated Google Map to allow users checking instant events at their convenience. 
+National Park is an Android traveling app for you to explore national parks in just one tap!
 
 # Problem that the application solve:
 Drivers cannot get the most updated traffic event such as an small accident on the way home. OnTheRoad support deivers to report the traffic event they experienced in real time so that other users get to know the triffic situation at that point so as to avoid drive to that road.
 
 # Target Users:
-People who need to get the real tiem traffic event while driving.
+People who loves treval.
 
 # 5 features:
-**Real Time:** The database is backed by a real-time connection to the back end, and if you use the Firebase SDK, you get live updates in your app any time something changes.
+**Map:** User can have an overview of the 56 national parks in one glance.
 
+**Search:** User can enter State code in the search box to get the parks in that specific state.
 
-**Speed:** The SDK handles all network traffic and saves the time to take consideration of networking layer. Firebase database is based on Nosql, updating data is in milliseconds.
+**Info Card:** To view a brief info by pressing on the location marker.
 
-**Offline Cache:** Firebase provide offline caching, even users update while they are offline, the data will not lost.
+**Information:** To get the park details(open & close time, events, entrance fee, etc) by pressing on each location card.
 
+**Parks List:** User can also browse parks and look into park details by press the parks BTN in nav bar.
 
-**Google Owned:** Firebase is well integrate with Android platform 
-
-**Backend Service Group:** Firebase provides easy to use and powerful backend group services. We can quickly develop an app by taking advantage of it.
 
 # Schedule of milestones:
 ## 11.12 : design the app 
-* Designed the app based on single activity architecture. Attached the activity with parallel fragments with various functionalities. Kept the design as simple as possible. Separate code modules according to fragments. 
+* Designed the app based on single activity architecture. 
 
 ## 11.18
 * OnBording
-* ViewPager
-* Firebase Setup
+* MVC
+* API Setup
 
 ## 11.25
 * Action Bar
 * Navigation View With Action Bar
-* Add Logout function
 * Google Map Service Setup
 
 ## 12.2
@@ -56,12 +50,9 @@ People who need to get the real tiem traffic event while driving.
 ## 12.9 
 * Recycler view
 * Switch between layouts
-* Report Event To FireBase
-* Test and Firebase Storage
 
 ## 12.16
-* Listen To Firebase Database
 * Finalize the final project
 
 ## The most challenging part of the project:
-Fetching data from backend server and display on screen.
+Fetching data from API and display on screen.
